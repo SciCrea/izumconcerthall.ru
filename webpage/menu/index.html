@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Меню | Izum Concert Hall</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.7/css/uikit.min.css" />
+    <link href="../../assets/css/styles.css" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="uk-container">
+            <nav class="uk-navbar-container uk-hidden@m uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left"><a class="uk-navbar-toggle" uk-toggle="target: #navbar-offcanvas"
+                        uk-navbar-toggle-icon href=""></a></div>
+                <div class="uk-navbar-center">
+                    <a href="/">
+                        <picture>
+                            <source srcset="/assets/images/logo-white80.webp" type="image/webp">
+                            <img src="/assets/images/logo-white80.png" alt="" />
+                        </picture>
+                    </a>
+                </div>
+            </nav>
+            <div id="navbar-offcanvas" uk-offcanvas>
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li><a href="/webpage/ploshchadka/izum-concert-hall/">Izum Concert Hall</a></li>
+                        <li><a href="/webpage/ploshchadka/faq/">FAQ</a></li>
+                        <li><a href="/webpage/afisha/">Афиша</a></li>
+                        <li><a href="/webpage/gallery/foto/">Фото</a></li>
+                        <li><a href="/webpage/gallery/video/">Видео</a></li>
+                        <li><a href="/webpage/skhema-zala/">Схема зала</a></li>
+                        <li><a href="/webpage/menu/">Меню</a></li>
+                        <li><a href="/webpage/kontakty/">Контакты</a></li>
+                    </ul>
+                    <ul class="uk-grid-small uk-flex-center" uk-grid>
+                        <li>
+                            <a href="https://vk.com/izum_hall" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="35" height="35"
+                                    fill="white">
+                                    <path
+                                        d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/izum_hall" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35"
+                                    fill="white">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-visible@m" uk-grid>
+                <div><a href="/">
+                        <picture>
+                            <source srcset="/assets/images/logo-white1280.webp" type="image/webp">
+                            <img src="/assets/images/logo-white1280.png" alt="" />
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <nav class="uk-navbar-container uk-visible@m uk-navbar-transparent" uk-navbar="mode: click">
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#">Площадка</a>
+                            <div class="uk-navbar-dropdown uk-background-secondary">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="/webpage/ploshchadka/izum-concert-hall/">Izum Concert Hall</a></li>
+                                    <li><a href="/webpage/ploshchadka/faq/">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/webpage/afisha/">Афиша</a></li>
+                        <li>
+                            <a href="#">Галерея</a>
+                            <div class="uk-navbar-dropdown uk-background-secondary">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="/webpage/gallery/foto/">Фото</a></li>
+                                    <li><a href="/webpage/gallery/video/">Видео</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/webpage/skhema-zala/">Схема зала</a></li>
+                        <li><a href="/webpage/menu/">Меню</a></li>
+                        <li><a href="/webpage/kontakty/">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-right uk-visible@m">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="https://vk.com/izum_hall" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="35" height="35"
+                                    fill="white">
+                                    <path
+                                        d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/izum_hall" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="35" height="35"
+                                    fill="white">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main uk-height-viewport="expand:true">
+        <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+            <div uk-grid>
+                <div class="uk-width-expand">
+                    <h2>Меню</h2>
+                </div>
+            </div>
+            <div class="uk-child-width-1-2@s" uk-grid>
+                <div>
+
+                    <h3><strong>Закуски</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Брускетта с ростбифом и томатами</p>
+                            <p>(сочные кусочки ростбифа на хрустящем багете с вялеными томатами и пряным соусом)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">150гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">240₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Брускетта с подкопчённым лососем и авокадо</p>
+                            <p>(Нежный лосось собственного копчения на хрустящем багете с авокадо)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">130гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">290₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Тартар из креветок и лосося</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">170гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">620₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Хумус с питтой и печеным перцем</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">280гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">250₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Ассорти мясных деликатесов</p>
+                            <p>(Буженина, ростбиф, сальчичон, язык говяжий)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">200/50гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">780₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Сырное плато 200/55/30 гр</p>
+                            <p>(Сыры моцарелла, гауда, чеддер, пармезан, дор блю, мед, виноград, грецкий орех)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">200/55/30гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">600₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Ассорти кавказских сыров</p>
+                            <p>(Сулугуни, чечил, брынза, адыгейский)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">160/30гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">550₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Рыбное Ассорти</p>
+                            <p>(Масленная рыба, лосось слабосоленый, лосось холодного копчения, масло сливочное,
+                                чиабатта)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">180/30гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">850₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Ассорти солений</p>
+                            <p>(Капуста квашенная, огурцы малосольные, томаты консервированные, перчик халапеньо)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">260гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">300₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Ассорти из овощей</p>
+                            <p>(Свежие томаты, болгарский перец, редис, огурец, зелень</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">200/30гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">320₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Сельдь с картофелем и розмарином</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">250гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">260₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Фруктовое ассорти</p>
+                            <p>(Бананы, яблоко, груша, виноград, киви, мята)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">800гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">990₽</b>
+                    </div>
+
+                    <h3><strong>Закуски к пиву</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Свиные ребрышки BBQ</p>
+                            <p>(томленые в течении 6 часов свиные ребрышки подаются с квашеной капустой и мятным соусом)
+                            </p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">350гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">580₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Крылышки BBQ</p>
+                            <p>(медовые крылышки обжаренные на гриле подаются с соусом тар тар)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">250гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">390₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Жаренные креветки в чесночной пасте</p>
+                            <p>(Магаданские креветки обжаренные в чесночной пасте и перцем чили )</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">250/30гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">380₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Аранчини с соусом Арабьята</p>
+                            <p>(Хрустящие рисовые шарики с начинкой из бекона и сыра)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">150/30</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">300₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Сет на компанию</p>
+                            <p>(Крылья BBQ, ребрышки BBQ, гренки чесночные, колбаски куриные, колбаски говяжьи с соусом
+                                BBQ и айоли)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">650/80гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">1100₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Колбаски чивабчичи с соусом Айоли</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">250/30гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">320₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Баварские колбаски с томатным соусом и горчицей</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">250/30гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">450₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Гренки чесночные</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">100гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">130₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Картофель фри</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">100гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">90₽</b>
+                    </div>
+
+                    <h3><strong>Основные блюда</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Палента с ребрышками</p>
+                            <p>(Нежная, сливочная кукурузная палента с сочными свиными ребрышками, фасолью и томатами)
+                            </p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">370гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">450₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Джанбалайя из индейки с беконом и рисом</p>
+                            <p>(Тушёное филе индейки с беконом и овощами, Коджунскими специями и лаймом с добавлением
+                                риса
+                                арборио)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">300гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">350₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Утиная грудка с блинчиками Мандарин</p>
+                            <p>(Утиная грудка в медовой глазури подается с овощами и блинчиками мандарин)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">300гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">680₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Морской окунь на картофельном дранике</p>
+                            <p>(Морской окунь приготовленный на гриле подается с картофельными драниками и соусом
+                                Тартар)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">360гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">680₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Кордон блю с хумусом</p>
+                            <p>(Куриный рулет с адыгейским сыром в грустящей панировке с хумусом и зеленью)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">280гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">650₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Равиоли с лососем под сливочным соусом с красной икрой</p>
+                            <p>(Филе лосося с сыром рикотта, пармезана, подается с красной икрой и сливочным соусом)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">280гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">660₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Удон с курицей и овощами</p>
+                            <p>(лапша пшеничная, куриное филе, секретный соус, перец болгарский, морковь, лук)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">250гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">310₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Паста карбонара</p>
+                            <p>(Паста, копченый бекон, сливки, сыр пармезан, яйцо, базилик, томаты черри)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">230гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">350₽</b>
+                    </div>
+                </div>
+                <div>
+                    <h3><strong>Пицца/бургер</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Пицца Пепперони</p>
+                            <p>(Пряный соус, пикантная колбаса пепперони, сливочный сыр моцарелла, хрустящее тесто
+                                приготовленное в печи на керамическом камне)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">600гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">450₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Пицца Маргарита</p>
+                            <p>(Пряный соус, сливочный сыр моцарелла, томаты и хрустящее тесто)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">550гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">380₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Пицца мясная</p>
+                            <p>(Соус фирменный, пепперони, говядина, сыр моцарелла, томаты)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">560гр</div>
+                        <b class="uk-width-expand uk-margin-remove-top">550₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Пицца пять сыров</p>
+                            <p>(сыр моцарела, дор блю, пармезан, гауда, чедер, соус сырный)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">580гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">550₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Бургер фирменный</p>
+                            <p>(Ароматная булочка, мраморная говядина, нежный сыр чеддер, томаты, огурцы маринованный
+                                соус
+                                фирменный, хешбраун, фри)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">350гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">350₽</b>
+                    </div>
+
+                    <h3><strong>Салаты</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Утиная грудка с апельсиновой заправкой и миксом семечек</p>
+                            <p>(Хрустящие листья салата, нежная утиная грудка, свежие томаты и все это, под апельсиновой
+                                заправкой)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">270гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">560₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Фалафель с йогуртом</p>
+                            <p>(Хрустящие шарики из нута с листьями салата, авокадо, томатов, огурцов, греческого
+                                йогурта и посыпкой семен Чиа)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">300гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">260₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Цезарь с цыпленком</p>
+                            <p>(Куриная грудка обжаренная на гриле, свежие листья салата, пармезан, томаты, ну и конечно
+                                же
+                                грустящие чипсы багета с соусом Цезарь)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">260гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">290₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Салат тигровыми креветками, грейпфрутом и семенами кинуа</p>
+                            <p>(Тигровые креветки обжаренные с чесноком и соевым соусом, салат, сочный грейпфрут,
+                                авокадо под соусом бальзамик)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">280гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">550₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Теплый салат с ростбифом</p>
+                            <p>(Ломтики ростбифа, листья салата, перец, томаты и кинза с медово-горчичным соусом)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">240гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">580₽</b>
+                    </div>
+
+                    <h3><strong>Мясо</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Стейк Филе-миньон</p>
+                            <p>(Подается с салатом и соусом Блю чиз)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">180/80/40гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">980₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Денвер Стейк</p>
+                            <p>(подается картофелем и перечным соусом)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">250/80/50гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">850₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Скерт Стейк</p>
+                            <p><strong>(Подается с салатом и соусом чимичурри)</strong></p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">250/80/50гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">1200₽</b>
+                    </div>
+
+                    <h3><strong>Соуса</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Барбекю</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">50гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">50₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Тартар</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">50гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">50₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Кетчуп</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">50гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">50₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Чимичурри</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">50гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">50₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Сырный</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">50гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">50₽</b>
+                    </div>
+
+                    <h3><strong>Хлеб</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Чиабатта</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">
+                            </p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">100₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Пшеничный</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">
+                            </p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">50₽</b>
+                    </div>
+
+                    <h3><strong>Десерты</strong></h3>
+
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Мороженное с бананом флабе</p>
+                            <p>(Мороженое пломбир, банан, ром)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">200гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">190₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Крем – карамель</p>
+                            <p>(Сливочный крем, карамель, мята)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">200гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">180₽</b>
+                    </div>
+                    <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+                        <div class="MenuItem uk-width-3-3 uk-width-2-3@m">
+                            <p>Наполеон</p>
+                            <p>(Заварной крем, слоеное тесто, топинг)</p>
+                        </div>
+                        <div class="uk-width-expand uk-margin-remove-top">130гр</p>
+                        </div>
+                        <b class="uk-width-expand uk-margin-remove-top">120₽</b>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-6@m">
+                    <h4>Основное меню</h4>
+                    <div uk-lightbox>
+                        <a href="img/osn/menyu.jpg"><img src="img/osn/menyu.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-6@m">
+                    <h4>Кальяны от шефа</h4>
+                    <div uk-lightbox>
+                        <a href="img/kalyan/menyu_kalyan.jpg"><img src="img/kalyan/menyu_kalyan.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <h4>Коктейльная карта</h4>
+                    <div class="uk-child-width-1-6@s uk-grid-small" uk-grid uk-lightbox>
+                        <div>
+                            <a href="img/koktei/koktei_774_l_naya_karta_1_str.jpg">
+                                <img src="img/koktei/koktei_774_l_naya_karta_1_str.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="img/koktei/koktei_774_l_naya_karta_2_str.jpg">
+                                <img src="img/koktei/koktei_774_l_naya_karta_2_str.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="img/koktei/koktei_774_l_naya_karta_3_str.jpg">
+                                <img src="img/koktei/koktei_774_l_naya_karta_3_str.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="img/koktei/koktei_774_l_naya_karta_4_str.jpg">
+                                <img src="img/koktei/koktei_774_l_naya_karta_4_str.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="img/koktei/koktei_774_l_naya_karta_5_str.jpg">
+                                <img src="img/koktei/koktei_774_l_naya_karta_5_str.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="img/koktei/koktei_774_l_naya_karta_6_str.jpg">
+                                <img src="img/koktei/koktei_774_l_naya_karta_6_str.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4>Меню бара</h4>
+            <div class="uk-child-width-expand uk-grid-small" uk-grid uk-lightbox>
+                <div>
+                    <a href="img/bar/2.jpg"><img src="img/bar/2.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="img/bar/3.jpg"><img src="img/bar/3.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="img/bar/4.jpg"><img src="img/bar/4.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="img/bar/5.jpg"><img src="img/bar/5.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="img/bar/6.jpg"><img src="img/bar/6.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="img/bar/7.jpg"><img src="img/bar/7.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="img/bar/8.jpg"><img src="img/bar/8.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer uk-padding">
+        <div class="uk-container">
+            <ul class="uk-grid-collapse uk-flex-center uk-text-center" uk-grid>
+                <li>Пенза, проспект Строителей, 1г</li>
+                <li><a href="tel:+78412237272">+7 (8412) 23-72-72</a></li>
+                <li>© Izum Concert Hall</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.7/js/uikit.min.js"
+        integrity="sha512-8qiRasoFXMiNj3lzriKW6BKSPpSgUvv+5spP1TkNs2yf2WY9B263HSkMcCq4Ym2H9VpzzqhcJUvjBjKkzMCFyw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.7/js/uikit-icons.min.js"
+        integrity="sha512-yBrRMXt+csYXtowumQsVoq3TZiwYGDBIRPCLnGm4Cuu0ly2ow3Q2KAepozpy6mdewpkZl/NcbqBKb8789cCygg=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <script src="../../assets/javascript/app.js"></script>
+</body>
+
+</html>

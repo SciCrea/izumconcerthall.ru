@@ -1,0 +1,44 @@
+.uk-background-secondary {
+    background-color: black;
+}
+
+.uk-navbar-nav>li>a {
+    color: white;
+}
+
+.uk-navbar-nav>li:hover>a,
+.uk-navbar-nav>li>a.uk-open,
+.uk-navbar-nav>li>a:focus {
+    color: white;
+}
+
+.uk-navbar-dropdown {
+    border: 1.5px solid white;
+}
+
+.uk-navbar-dropdown-nav>li>a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.uk-navbar-dropdown-nav > li > a:focus, .uk-navbar-dropdown-nav > li > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+
+.uk-navbar-toggle {
+    color: white;
+}
+
+.uk-offcanvas-bar {
+    background: black;
+}
+
+.uk-offcanvas-bar .uk-nav-primary > li > a {
+    color: white;
+}
